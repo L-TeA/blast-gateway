@@ -44,7 +44,7 @@ jobs:
         run: docker rm -f gateway-service-container || true  # Ignore error if the container does not exist
 
       - name: Run Docker as container
-        run: docker run -d -p 8091:8091 --name gateway-service-container damuleli/gateway-service
+        run: docker run -d -p 8080:8080 --name gateway-service-container damuleli/gateway-service
 
       - name: Verify Docker Installation
         run: |
